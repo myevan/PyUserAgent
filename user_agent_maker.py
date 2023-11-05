@@ -28,3 +28,5 @@ class UserAgentMaker:
             platform_version = platform.version()
             return ' '.join((platform_system, platform_version))
 
+if __name__ == '__main__':
+    print(UserAgentMaker.load_os_info())
